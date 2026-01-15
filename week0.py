@@ -46,7 +46,8 @@ def main():
    discount_input=input("How much is the price? ")
    price=dollar_to_float(user_input)
    discount=percent_to_float(discount_input)
-   result=price*(1-discount)
+   result=price*(1-discount)20
+   
    print(result)
 
 
@@ -65,26 +66,26 @@ def percent_to_float(p):
 
 main()
 
-# def main():
-#     price_string = input("How much is the item? ")
-#     discount_string = input("What is the discount? ")
+def main():
+    price_string = input("How much is the item? ")
+    discount_string = input("What is the discount? ")
 
-#     price = dollar_to_float(price_string)
-#     discount = percent_to_float(discount_string)
+    price = dollar_to_float(price_string)
+    discount = percent_to_float(discount_string)
 
-#     final_price = price * (1 - discount)
+    final_price = price * (1 - discount)
 
-#     print(f"Final price: ${final_price:.2f}")
-
-
-# def dollar_to_float(d):
-#     d = d.replace("$", "")
-#     return float(d)
+    print(f"Final price: ${final_price:.2f}")
 
 
-# def percent_to_float(p):
-#     p = p.replace("%", "")
-#     return float(p) / 100
+def dollar_to_float(d):
+    d = d.replace("$", "")
+    return float(d)
 
 
-# main()
+def percent_to_float(p):
+    p = p.replace("%", "")
+    return float(p) / 100
+
+
+main()
